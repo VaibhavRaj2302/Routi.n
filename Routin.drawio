@@ -75,6 +75,9 @@
         <mxCell id="lTLpZzJRcHmcW6SRz25A-25" value="&lt;ul&gt;&lt;li&gt;firebase authentication&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;align=left;" vertex="1" parent="1">
           <mxGeometry x="145" y="530" width="165" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-27" value="Packages required in the application.&lt;div&gt;&lt;ol&gt;&lt;li&gt;Firebase authentication&lt;/li&gt;&lt;li&gt;Firebase Real time data base.&lt;/li&gt;&lt;li&gt;Hive for local storage.&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;strokeWidth=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="121" y="680" width="469" height="260" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
