@@ -1,9 +1,80 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Page-1" id="72hGcq3CHv9E9iCtWn72">
-    <mxGraphModel>
+    <mxGraphModel dx="1050" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-1" target="lTLpZzJRcHmcW6SRz25A-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-1" value="App initialization" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="105" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-2" target="lTLpZzJRcHmcW6SRz25A-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-2" target="lTLpZzJRcHmcW6SRz25A-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-2" value="Firebase autherization" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-4" target="lTLpZzJRcHmcW6SRz25A-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-4" target="lTLpZzJRcHmcW6SRz25A-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-4" target="lTLpZzJRcHmcW6SRz25A-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-4" value="Home page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="301" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-6" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="201" y="200" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-7" target="lTLpZzJRcHmcW6SRz25A-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-7" value="Login page" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-9" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="145" y="360" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-14" target="lTLpZzJRcHmcW6SRz25A-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-14" value="tab bar&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="421" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-16" target="lTLpZzJRcHmcW6SRz25A-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-16" value="Drawer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-17" target="lTLpZzJRcHmcW6SRz25A-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-17" value="Add task FAB" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="345" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-19" value="&lt;ul&gt;&lt;li&gt;Today list.&lt;/li&gt;&lt;li&gt;Tomorrow list&lt;/li&gt;&lt;li&gt;Date till one week from now.&lt;/li&gt;&lt;li&gt;on selected tab basis show tasks in body.&lt;/li&gt;&lt;/ul&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="421" y="510" width="259" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-21" value="&lt;ul&gt;&lt;li&gt;User details.&lt;/li&gt;&lt;li&gt;Pending tasks&lt;/li&gt;&lt;li&gt;Completed tasks&lt;/li&gt;&lt;li&gt;Logout button&lt;/li&gt;&lt;li&gt;app version and copyright.&lt;/li&gt;&lt;/ul&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="770" y="80" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-23" value="&lt;ul&gt;&lt;li&gt;Add task title&lt;/li&gt;&lt;li&gt;task start date time.&lt;/li&gt;&lt;li&gt;task duration.&lt;/li&gt;&lt;li&gt;task out come.&lt;/li&gt;&lt;/ul&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="827" y="345" width="220" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="lTLpZzJRcHmcW6SRz25A-25" value="&lt;ul&gt;&lt;li&gt;firebase authentication&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="145" y="530" width="165" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
