@@ -17,7 +17,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="lTLpZzJRcHmcW6SRz25A-2" value="Firebase autherization" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="180" width="130" height="100" as="geometry" />
+          <mxGeometry x="80" y="180" width="150" height="110" as="geometry" />
         </mxCell>
         <mxCell id="lTLpZzJRcHmcW6SRz25A-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-4" target="lTLpZzJRcHmcW6SRz25A-16">
           <mxGeometry relative="1" as="geometry">
@@ -34,7 +34,7 @@
           <mxGeometry x="301" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lTLpZzJRcHmcW6SRz25A-6" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="201" y="200" width="40" height="30" as="geometry" />
+          <mxGeometry x="220" y="210" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="lTLpZzJRcHmcW6SRz25A-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lTLpZzJRcHmcW6SRz25A-7" target="lTLpZzJRcHmcW6SRz25A-25">
           <mxGeometry relative="1" as="geometry" />
