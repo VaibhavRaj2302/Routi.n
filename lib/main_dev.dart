@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:routi_n/Route/routes.dart';
+import 'package:routi_n/Themes/appTheme.dart';
 import 'package:routi_n/firebase_options.dart';
 import 'package:routi_n/pages/ErrorPage/view/ErrorPage.dart';
 import 'package:routi_n/pages/HomePage/view/homePage.dart';
@@ -36,9 +37,8 @@ class MyApp extends StatelessWidget {
         return MaterialApp(
           title: 'Flutter Demo',
           navigatorKey: Routes.navigatorKey,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          ),
+          theme: Apptheme.lightThemeData,
+          darkTheme: Apptheme.darkThemeData,
           initialRoute: Routes.initialPageRouteName(snapshot),
           onGenerateRoute: (settings) => Routes.generateRoute(settings),
           routes: {
