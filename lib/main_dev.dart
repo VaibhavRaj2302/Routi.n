@@ -66,12 +66,16 @@ class FirebaseAuthListeners {
       if (user == null) {
         debugPrint('User is currently signed out!');
         navigateToLogin();
+      } else {
+        navigateToHomePage();
       }
     });
 
     FirebaseAuth.instance.idTokenChanges().listen((User? user) {
       if (user != null) {
         debugPrint('ID Token changed for user: ${user.uid}');
+        navigateToHomePage();
+      } else {
         navigateToLogin();
       }
     });
@@ -79,6 +83,8 @@ class FirebaseAuthListeners {
     FirebaseAuth.instance.userChanges().listen((User? user) {
       if (user != null) {
         debugPrint('User profile changed: ${user.displayName}');
+        navigateToHomePage();
+      } else {
         navigateToLogin();
       }
     });
@@ -86,10 +92,17 @@ class FirebaseAuthListeners {
 
   static void navigateToLogin() {
     if (Routes.navigatorKey.currentContext != null) {
-      Navigator.of(Routes.navigatorKey.currentContext!).pushAndRemoveUntil(
-        CupertinoPageRoute(builder: (context) => Loginpage()),
-        (route) => false,
-      );
+      Navigator.of(
+        Routes.navigatorKey.currentContext!,
+      ).pushNamedAndRemoveUntil(Routes.login, (route) => false);
+    }
+  }
+
+  static void navigateToHomePage() {
+    if (Routes.navigatorKey.currentContext != null) {
+      Navigator.of(
+        Routes.navigatorKey.currentContext!,
+      ).pushNamedAndRemoveUntil(Routes.home, (route) => false);
     }
   }
 }
