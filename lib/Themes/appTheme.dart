@@ -27,6 +27,29 @@ class Apptheme {
 
     scaffoldBackgroundColor: lightThemeBackground,
 
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ButtonStyle(
+        backgroundColor: WidgetStateColor.resolveWith((states) {
+          if (states.contains(WidgetState.disabled)) {
+            return Colors.grey;
+          }
+          return Colors.white;
+        }),
+        foregroundColor: WidgetStateColor.resolveWith((states) {
+          if (states.contains(WidgetState.disabled)) {
+            return Colors.white;
+          }
+          return lightThemeText;
+        }),
+        shape: WidgetStateOutlinedBorder.resolveWith((states) {
+          return RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5),
+            side: BorderSide(color: Colors.black, width: 1),
+          );
+        }),
+      ),
+    ),
+
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: Colors.white70,

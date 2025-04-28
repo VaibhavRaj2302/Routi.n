@@ -56,6 +56,29 @@ class Loginpageviewmodel extends ChangeNotifier {
       notifyListeners();
     }
   }
+
+  Future<void> signInWithGoogle() async {
+    viewState.message = null;
+    viewState.pageState = PageState.loading;
+    notifyListeners();
+
+    GoogleAuthProvider googleProvider = GoogleAuthProvider();
+
+    googleProvider.addScope(
+      'https://www.googleapis.com/auth/contacts.readonly',
+    );
+    googleProvider.setCustomParameters({'login_hint': 'user@example.com'});
+    try {
+      await firebaseAuth.signInWithPopup(googleProvider);
+
+      viewState.pageState = PageState.success;
+    } catch (e) {
+      viewState.message = e.toString();
+      viewState.pageState = PageState.error;
+    } finally {
+      notifyListeners();
+    }
+  }
 }
 
 class LoginPageState {

@@ -193,7 +193,9 @@ class _LoginpageState extends State<Loginpage> {
       spacing: 5,
       children: [
         customIconButtonForProviders(
-          onPressed: () {},
+          onPressed: () async {
+            await viewModel.signInWithGoogle();
+          },
           icon: Icons.abc,
           label: 'Google',
         ),

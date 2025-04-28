@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:routi_n/customComponents/RNDrawer.dart';
 import 'package:routi_n/pages/HomePage/viewModel/homePageViewModel.dart';
 
 class Homepage extends StatefulWidget {
@@ -23,6 +24,12 @@ class _HomepageState extends State<Homepage> {
       listenable: viewModel,
       builder:
           (context, child) => Scaffold(
+            drawer: Rndrawer(
+              crossButton: () {
+                Navigator.pop(context);
+              },
+              logoutButton: () => viewModel.logout(),
+            ),
             appBar: AppBar(title: Text('Title')),
             body: Container(color: Colors.amber),
           ),
