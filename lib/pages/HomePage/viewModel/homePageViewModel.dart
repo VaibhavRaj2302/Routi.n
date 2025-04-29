@@ -19,6 +19,22 @@ class Homepageviewmodel extends ChangeNotifier {
       notifyListeners();
     }
   }
+
+  Future<void> futureFunctionForTesting() async {
+    await Future.delayed(Duration(milliseconds: 100));
+    viewState.pageState = PageState.loading;
+    notifyListeners();
+
+    try {
+      await Future.delayed(Duration(seconds: 3));
+      viewState.pageState = PageState.success;
+    } catch (e) {
+      viewState.message = e.toString();
+      viewState.pageState = PageState.error;
+    } finally {
+      notifyListeners();
+    }
+  }
 }
 
 class HomePageState {
