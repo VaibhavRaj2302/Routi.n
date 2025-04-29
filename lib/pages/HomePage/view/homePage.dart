@@ -9,12 +9,28 @@ class Homepage extends StatefulWidget {
   State<Homepage> createState() => _HomepageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
   late Homepageviewmodel viewModel;
+
+  late TabController tabBarController;
+
+  final tabs = [
+    Container(color: Colors.amber, height: 30),
+    Container(color: Colors.green, height: 30),
+    Container(color: Colors.blue, height: 30),
+    Container(color: Colors.pink, height: 30),
+    Container(color: Colors.purple, height: 30),
+    Container(color: Colors.purple, height: 30),
+    Container(color: Colors.purple, height: 30),
+    Container(color: Colors.purple, height: 30),
+    Container(color: Colors.purple, height: 30),
+    Container(color: Colors.purple, height: 30),
+  ];
 
   @override
   void initState() {
     viewModel = Homepageviewmodel();
+    tabBarController = TabController(length: tabs.length, vsync: this);
     super.initState();
   }
 
@@ -31,8 +47,12 @@ class _HomepageState extends State<Homepage> {
               logoutButton: () => viewModel.logout(),
             ),
             appBar: AppBar(title: Text('Title')),
-            body: Container(color: Colors.amber),
+            body: customTabBar(),
           ),
     );
+  }
+
+  Widget customTabBar() {
+    return TabBar(controller: tabBarController, tabs: tabs);
   }
 }
