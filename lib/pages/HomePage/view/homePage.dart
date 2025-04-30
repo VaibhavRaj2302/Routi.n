@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:routi_n/customComponents/RNDrawer.dart';
+import 'package:routi_n/customComponents/customListView.dart';
 import 'package:routi_n/customComponents/loadingIndicatorOverlay.dart';
 import 'package:routi_n/enumsAndConstants/enums.dart';
 import 'package:routi_n/pages/HomePage/viewModel/homePageViewModel.dart';
@@ -83,43 +84,40 @@ class _HomepageState extends State<Homepage> with TickerProviderStateMixin {
       controller: tabBarController,
       children: List.generate(
         tabBarController.length,
-        (index) => DummyWidgetForTesting(
-          state: viewModel.viewState.pageState,
-          date: index.toString(),
-          didUpdateWidget: () async {
-            await viewModel.futureFunctionForTesting();
-          },
+        (index) => Customlistview<DummyDataModel>(
+          items: List.generate(
+            20,
+            (index) => DummyDataModel.generateDummyDate(),
+          ),
+          updateWidget: () async => viewModel.futureFunctionForTesting(),
         ),
       ),
     );
   }
 }
 
-class DummyWidgetForTesting extends StatefulWidget {
-  DummyWidgetForTesting({
-    required this.state,
-    required this.date,
-    required this.didUpdateWidget,
-    super.key,
+class DummyDataModel {
+  DummyDataModel({
+    this.caption,
+    this.endDateTime,
+    this.startDateTime,
+    this.subTitle,
+    this.title,
   });
-  PageState state;
-  String date;
-  Function() didUpdateWidget;
 
-  @override
-  State<DummyWidgetForTesting> createState() => _DummyWidgetForTestingState();
-}
+  String? title;
+  String? subTitle;
+  String? caption;
+  DateTime? startDateTime;
+  DateTime? endDateTime;
 
-class _DummyWidgetForTestingState extends State<DummyWidgetForTesting> {
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    widget.didUpdateWidget();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(child: Text('${widget.state} and ${widget.date}'));
-  }
+  factory DummyDataModel.generateDummyDate() => DummyDataModel(
+    caption:
+        'This is a dummy caption text created for testing purposes. It contains exactly one hundred words to ensure proper functionality and testing of the application. The purpose of this text is to simulate real-world data that might be used in the application. By using this text, developers can verify that the UI components and logic handle longer strings correctly. This caption serves as a placeholder and can be replaced with actual data when the application is deployed. Testing with such text ensures robustness and reliability of the application under various scenarios.',
+    endDateTime: DateTime.now().add(Duration(days: 7)),
+    startDateTime: DateTime.now().subtract(Duration(days: 2)),
+    subTitle:
+        'This is some title which is subtitle and show major captions or reason for tasks.',
+    title: 'This is title',
+  );
 }
